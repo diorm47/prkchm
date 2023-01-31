@@ -975,32 +975,45 @@ nav {
   background-size: cover;
 }
 
-.geography {
+.geography,
+.digest,
+.template {
   width: 1214px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  margin-top: 120px;
 }
 
-.left_geography {
+.geography {
+  margin-top: 100px;
+}
+.digest {
+  margin-top: 50px;
+}
+.left_geography,
+.left_deigest,
+.left_section {
   display: flex;
 }
 
-.left_geography_slash p {
+.left_geography_slash p,
+.left_deigest_slash p {
   font-weight: 700;
-  font-size: 100px;
+  font-size: 80px;
   line-height: 90%;
   margin-right: 30px;
 }
-.left_geography_text p {
+.left_geography_text p,
+.left_deigest_text p {
   font-weight: 700;
   font-size: 18px;
   line-height: 145%;
   text-transform: uppercase;
   color: #000000;
 }
-.right_geography {
+.right_geography,
+.right_deigest,
+.right_section {
   width: 800px;
 }
 
@@ -1011,4 +1024,95 @@ nav {
   text-transform: uppercase;
   color: #000000;
   margin-bottom: 40px;
+}
+
+.geography_map {
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 60px;
+}
+.geography_map img {
+  width: 100%;
+}
+
+.deigest_text {
+  margin-bottom: 40px;
+}
+.deigest_text p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 145%;
+  color: #000000;
+  padding-right: 10px;
+}
+
+.template .left_part_circle_text {
+  padding-left: 0;
+}
+.circle_socials {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.circle_socials img {
+  margin-right: 20px;
+}
+.template .left_section .left_part_circle {
+  margin-top: -40px;
+}
+
+.right_top_text {
+  border-top: 1px solid #000;
+  margin-bottom: 50px;
+}
+.right_top_text p {
+  background: #000000;
+  width: 602px;
+  padding: 6px 16px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.analyse_products {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.analyse_products .analyse_left div,
+.analyse_products .analyse_right div {
+  display: flex;
+  align-items: start;
+  margin-bottom: 10px;
+}
+.analyse_products div p {
+  margin-left: 15px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 145%;
+  color: #000000;
+}
+
+.right_section .black_line {
+  margin-top: 45px;
+  margin-bottom: 40px;
+}
+
+.template .slider_more {
+  display: flex;
+  justify-content: space-between;
+}
+.right_section .exclamation_mark {
+  width: 65px;
+}
+
+.template {
+  margin-bottom: 120px;
+}
+.recommendation {
+  display: flex;
+  align-items: center;
 }
