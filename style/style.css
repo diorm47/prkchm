@@ -1116,3 +1116,68 @@ nav {
   display: flex;
   align-items: center;
 }
+
+.our_advantage_marquee {
+  margin-bottom: 80px;
+}
+
+/* advantage */
+
+.advantages_list_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.advant_num_name {
+  display: flex;
+  align-items: center;
+}
+
+.advantage_number {
+  width: 58px;
+  height: 58px;
+  background: #000000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+}
+.advantage_number p {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 145%;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.advantage_name p {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 145%;
+  text-transform: uppercase;
+  color: #000000;
+}
+.growing_linee {
+  width: 100%;
+  height: 1px;
+  background: #000000;
+  margin: 45px 0 22px;
+}
+.advantage_text {
+  width: 60%;
+}
+.advantage_text p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 145%;
+  color: #000000;
+}
+
+.advatages_list .slider_more {
+  margin-top: 47px;
+}
+
+.recommendations_block .left_part_circle_text img {
+  margin-top: 15px;
+}
