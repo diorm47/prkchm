@@ -234,3 +234,108 @@ function currentSlide5(n) {
 
   showImage5((slideIndex5 = n));
 }
+
+// CAROUSEL-Reacommendations  ////////////////////////////
+var slideIndexRec = 1;
+
+function showImageRec(n) {
+  // for Display the first Image
+
+  "use strict";
+
+  var slideRec = document.getElementsByClassName("slides-carousel"),
+    i;
+
+  if (n > slideRec.length) {
+    // to prevent larger values than the slide length
+
+    slideIndexRec = 1;
+  }
+
+  if (n < 1) {
+    // to avoide negative values
+
+    slideIndexRec = slideRec.length;
+  }
+
+  for (i = 0; i < slideRec.length; i++) {
+    // to make other images dispaly: none
+
+    slideRec[i].style.display = "none";
+  }
+  slideRec[slideIndexRec - 1].style.display = "block";
+}
+
+showImageRec(slideIndexRec);
+
+function plusIndexRec(n) {
+  // for Next & Prev Actions
+
+  "use strict";
+
+  showImageRec((slideIndexRec += n));
+}
+
+function currentSlideRec(n) {
+  // for Slide Bullets Selection
+
+  "use strict";
+
+  showImageRec((slideIndexRec = n));
+}
+
+// LETTERS CAROUSEL  ////////////////////////////
+let isDown = false;
+let startX;
+let scrollLeft;
+const slider = document.querySelector(".letters_carousel_items");
+
+const end = () => {
+  isDown = false;
+  slider.classList.remove("active");
+};
+
+const start = (e) => {
+  isDown = true;
+  slider.classList.add("active");
+  startX = e.pageX || e.touches[0].pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+};
+
+const move = (e) => {
+  if (!isDown) return;
+
+  e.preventDefault();
+  const x = e.pageX || e.touches[0].pageX - slider.offsetLeft;
+  const dist = x - startX;
+  slider.scrollLeft = scrollLeft - dist;
+};
+
+(() => {
+  slider.addEventListener("mousedown", start);
+  slider.addEventListener("touchstart", start);
+
+  slider.addEventListener("mousemove", move);
+  slider.addEventListener("touchmove", move);
+
+  slider.addEventListener("mouseleave", end);
+  slider.addEventListener("mouseup", end);
+  slider.addEventListener("touchend", end);
+})();
+
+// MAIN FORM
+let timer;
+
+document.addEventListener("input", (e) => {
+  const el = e.target;
+
+  if (el.matches("[data-color]")) {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      document.documentElement.style.setProperty(
+        `--color-${el.dataset.color}`,
+        el.value
+      );
+    }, 100);
+  }
+});
