@@ -1780,22 +1780,97 @@
         <div class="right_section">
           <div class="main_form_form">
             <form>
-              <div class="form__group field">
+              <div class="form__group">
                 <input
                   type="input"
                   class="form__field"
-                  placeholder="Name"
+                  placeholder="Укажите ваше имя"
                   name="name"
                   id="name"
                   required
                 />
-                <label for="name" class="form__label">Name</label>
+                <label for="name" class="form__label">Ваше имя</label>
+              </div>
+              <div class="form__group">
+                <input
+                  type="input"
+                  class="form__field"
+                  placeholder="Телефон для связи"
+                  name="name"
+                  id="name"
+                  required
+                />
+                <label for="name" class="form__label">Телефон для связи</label>
+              </div>
+              <div class="form__group">
+                <input
+                  type="email"
+                  class="form__field"
+                  placeholder="Электронная почта"
+                  name="name"
+                  id="name"
+                  required
+                />
+                <label for="name" class="form__label">Электронная почта</label>
+              </div>
+              <div class="form_email_file">
+                <div class="form__group">
+                  <input
+                    type="text"
+                    class="form__field"
+                    placeholder="Задайте свой вопрос"
+                    name="name"
+                    id="name"
+                    required
+                  />
+                  <label for="name" class="form__label"
+                    >Задайте свой вопрос</label
+                  >
+                </div>
+                <div class="main_form_file">
+                  <input type="file" id="file-upload" multiple />
+                  <label for="file-upload">
+                    <pre> <p>Прикрепить файл</p></pre>
+                    <img
+                      src="./assests/icons/attach-file.svg"
+                      alt="attach-icon"
+                  /></label>
+                  <div id="file-upload-filename"></div>
+                </div>
+              </div>
+
+              <div class="form_bottom_items">
+                <div class="form_socials">
+                  <div class="form_social">
+                    <img src="./assests/icons/tg-white.svg" alt="telegram" />
+                  </div>
+                  <div class="form_social">
+                    <img src="./assests/icons/viber-white.svg" alt="viber" />
+                  </div>
+                  <p>
+                    Если у вас срочный вопрос, вы <br />
+                    можете написать нам <br />
+                    в мессенджерах
+                  </p>
+                </div>
+                <div class="main_form_submit">
+                  <div class="input_form_btn">
+                    <input type="submit" value="Отправить заявку" />
+                    <p>
+                      Нажимая на кнопку «Отправить заявку» я соглашаюсь
+                      на обработку персональных данных
+                    </p>
+                  </div>
+                </div>
               </div>
             </form>
           </div>
         </div>
       </div>
     </div>
+    <footer>
+      <div class="footer_wrapper"></div>
+    </footer>
 
     <script src="./js/index.js"></script>
   </body>
