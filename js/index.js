@@ -235,6 +235,55 @@ function currentSlide5(n) {
   showImage5((slideIndex5 = n));
 }
 
+// CAROUSEL-View  ////////////////////////////
+var slideIndexView = 1;
+
+function showImageView(n) {
+  // for Display the first Image
+
+  "use strict";
+
+  var slideView = document.getElementsByClassName("questions_slider"),
+    i;
+
+  if (n > slideView.length) {
+    // to prevent larger values than the slide length
+
+    slideIndexView = 1;
+  }
+
+  if (n < 1) {
+    // to avoide negative values
+
+    slideIndexView = slideView.length;
+  }
+
+  for (i = 0; i < slideView.length; i++) {
+    // to make other images dispaly: none
+
+    slideView[i].style.display = "none";
+  }
+  slideView[slideIndexView - 1].style.display = "block";
+}
+
+showImageView(slideIndexView);
+
+function plusIndexView(n) {
+  // for Next & Prev Actions
+
+  "use strict";
+
+  showImageView((slideIndexView += n));
+}
+
+function currentSlideView(n) {
+  // for Slide Bullets Selection
+
+  "use strict";
+
+  showImageView((slideIndexView = n));
+}
+
 // CAROUSEL-Reacommendations  ////////////////////////////
 var slideIndexRec = 1;
 

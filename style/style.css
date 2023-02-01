@@ -420,6 +420,7 @@ nav {
   margin-bottom: -145px;
 }
 
+
 .third_view {
   display: flex;
 }
@@ -429,8 +430,9 @@ nav {
 }
 
 .question_mark {
-  width: 28px;
-  height: 28px;
+  width: 28px !important;
+  height: 28px !important;
+
   border-radius: 50%;
   background: #000000;
   display: flex;
@@ -453,6 +455,7 @@ nav {
 
 .third_question {
   display: flex;
+  align-items: flex-start;
   margin: 25px 0;
 }
 .third_question .quest_text p {
@@ -556,6 +559,9 @@ nav {
   line-height: 145%;
   text-transform: uppercase;
   color: #ffffff;
+}
+.slider_section .slider-container .third_slider .slider_more .exclamation_mark {
+  width: 80px !important;
 }
 
 .slider_item_1 {
