@@ -1,5 +1,5 @@
+// CAROUSEL-1         //////////////////////
 var slideIndex = 1;
-// CAROUSEL-1         /////////////
 function showImage(n) {
   // for Display the first Image
 
@@ -90,7 +90,6 @@ function currentSlide2(n) {
 
 // CAROUSEL-3  ////////////////////////////
 var slideIndex3 = 1;
-
 function showImage3(n) {
   // for Display the first Image
 
@@ -118,9 +117,7 @@ function showImage3(n) {
   }
   slide3[slideIndex3 - 1].style.display = "block";
 }
-
 showImage3(slideIndex3);
-
 function plusIndex3(n) {
   // for Next & Prev Actions
 
@@ -128,7 +125,6 @@ function plusIndex3(n) {
 
   showImage3((slideIndex3 += n));
 }
-
 function currentSlide3(n) {
   // for Slide Bullets Selection
 
@@ -167,9 +163,7 @@ function showImage4(n) {
   }
   slide4[slideIndex4 - 1].style.display = "block";
 }
-
 showImage4(slideIndex4);
-
 function plusIndex4(n) {
   // for Next & Prev Actions
 
@@ -177,7 +171,6 @@ function plusIndex4(n) {
 
   showImage4((slideIndex4 += n));
 }
-
 function currentSlide4(n) {
   // for Slide Bullets Selection
 
@@ -216,9 +209,7 @@ function showImage5(n) {
   }
   slide5[slideIndex5 - 1].style.display = "block";
 }
-
 showImage5(slideIndex5);
-
 function plusIndex5(n) {
   // for Next & Prev Actions
 
@@ -226,7 +217,6 @@ function plusIndex5(n) {
 
   showImage5((slideIndex5 += n));
 }
-
 function currentSlide5(n) {
   // for Slide Bullets Selection
 
@@ -265,9 +255,7 @@ function showImageView(n) {
   }
   slideView[slideIndexView - 1].style.display = "block";
 }
-
 showImageView(slideIndexView);
-
 function plusIndexView(n) {
   // for Next & Prev Actions
 
@@ -275,7 +263,6 @@ function plusIndexView(n) {
 
   showImageView((slideIndexView += n));
 }
-
 function currentSlideView(n) {
   // for Slide Bullets Selection
 
@@ -314,9 +301,7 @@ function showImageRec(n) {
   }
   slideRec[slideIndexRec - 1].style.display = "block";
 }
-
 showImageRec(slideIndexRec);
-
 function plusIndexRec(n) {
   // for Next & Prev Actions
 
@@ -324,7 +309,6 @@ function plusIndexRec(n) {
 
   showImageRec((slideIndexRec += n));
 }
-
 function currentSlideRec(n) {
   // for Slide Bullets Selection
 
@@ -338,19 +322,16 @@ let isDown = false;
 let startX;
 let scrollLeft;
 const slider = document.querySelector(".letters_carousel_items");
-
 const end = () => {
   isDown = false;
   slider.classList.remove("active");
 };
-
 const start = (e) => {
   isDown = true;
   slider.classList.add("active");
   startX = e.pageX || e.touches[0].pageX - slider.offsetLeft;
   scrollLeft = slider.scrollLeft;
 };
-
 const move = (e) => {
   if (!isDown) return;
 
@@ -359,7 +340,6 @@ const move = (e) => {
   const dist = x - startX;
   slider.scrollLeft = scrollLeft - dist;
 };
-
 (() => {
   slider.addEventListener("mousedown", start);
   slider.addEventListener("touchstart", start);
@@ -388,14 +368,10 @@ document.addEventListener("input", (e) => {
     }, 100);
   }
 });
-
 // FORM INPUT FILE
-
 var input = document.getElementById("file-upload");
 var infoArea = document.getElementById("file-upload-filename");
-
 input.addEventListener("change", showFileName);
-
 function showFileName(event) {
   // the change event gives us the input it occurred in
   var input = event.srcElement;
@@ -406,3 +382,43 @@ function showFileName(event) {
   // use fileName however fits your app best, i.e. add it into a div
   infoArea.textContent = "Выбранный файл: " + fileName;
 }
+
+// MODAL
+const modal = document.querySelector(".modal");
+const overlay = document.querySelector(".overlay");
+const openModalBtn1 = document.querySelector(".btn-open1");
+const openModalBtn2 = document.querySelector(".btn-open2");
+const openModalBtn3 = document.querySelector(".btn-open3");
+const openModalBtn4 = document.querySelector(".btn-open4");
+const closeModalBtn = document.querySelector(".btn-close");
+const modal_wrapper = document.querySelector(".modal_wrapper");
+
+// close modal function
+const closeModal = function () {
+  modal_wrapper.classList.add("hidden");
+  modal.classList.add("hidden");
+  overlay.classList.add("hidden");
+};
+
+// close the modal when the close button and overlay is clicked
+closeModalBtn.addEventListener("click", closeModal);
+overlay.addEventListener("click", closeModal);
+
+// close modal when the Esc key is pressed
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+    closeModal();
+  }
+});
+
+// open modal function
+const openModal = function () {
+  modal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+  modal_wrapper.classList.remove("hidden");
+};
+// open modal event
+openModalBtn1.addEventListener("click", openModal);
+openModalBtn2.addEventListener("click", openModal);
+openModalBtn3.addEventListener("click", openModal);
+openModalBtn4.addEventListener("click", openModal);
