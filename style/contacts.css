@@ -1,0 +1,54 @@
+.right_title p {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 40px;
+}
+.contacts_page .contacts_page_left_list .left_contact_img img {
+  margin-left: -35px;
+  margin-bottom: 50px;
+}
+.contact_page_items h4 {
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 145%;
+  text-transform: uppercase;
+  color: #000000;
+}
+.contact_page_items p {
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 145%;
+  color: #000000;
+}
+.contacts_socials p,
+.contacts_socials a {
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.contacts_map {
+  width: 100%;
+  background: url(/assests/images/contacts-map.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 520px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contacts_form .main_form_form .main_form_submit,
+.contacts_form .main_form_form .input_form_btn input,
+.contacts_form .main_form_form .input_form_btn p {
+  width: 100%;
+}

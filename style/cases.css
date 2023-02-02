@@ -1,0 +1,139 @@
+.cases_page {
+  width: 1215px;
+  margin: 0 auto;
+}
+
+.page_title h1 {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 81px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.container {
+  width: 100%;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+/*.gallery*/
+.gallery {
+  width: 100%;
+  display: block;
+  margin-bottom: 65px;
+}
+.gallery .gallery-filter {
+  width: 100%;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #000;
+}
+.gallery .gallery-filter .filter-item {
+  color: #000;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+  display: inline-block;
+  cursor: pointer;
+  padding: 6px 15px;
+  transition: all 0.3s ease;
+}
+.gallery .gallery-filter .filter-item.active {
+  color: #fff;
+  background: #000;
+}
+
+.gallery .gallery-item.show {
+  animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.gallery .gallery-item.hide {
+  display: none;
+}
+
+.cases_items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cases_items .gallery-item {
+  margin-bottom: 30px;
+}
+
+.cases_items .gallery-item {
+  width: 595px;
+  height: 379px;
+  padding: 30px;
+  background: url(../assests/images/create_content.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cases_items .gallery-item .slider_top_text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cases_items .gallery-item .slider_top_text p {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 145%;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.cases_items .gallery-item .slider_bottom_text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.cases_items .gallery-item .slider_bottom_text p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 145%;
+  color: #ffffff;
+  text-transform: none !important;
+}
+
+.cases_items .gallery-item .slider_bottom_right_btn p {
+  text-transform: none !important;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 125%;
+  color: #ffffff;
+  cursor: pointer;
+}
+.cases_items .gallery-item .slider_bottom_right_btn img {
+  width: 20px;
+  margin-left: 6px;
+}
+
+.cases_black_line .black_line {
+  margin-bottom: 80px;
+}
+
+.cases_black_line .pre_form .message_block .union_triang {
+  bottom: -15px;
+  margin-bottom: 0;
+}

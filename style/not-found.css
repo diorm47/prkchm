@@ -1,0 +1,40 @@
+.not_found_wrapper {
+  width: 1215px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 70px 0 80px;
+}
+.not_found_wrapper img {
+  margin-right: 130px;
+}
+.not-found_text h1 {
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 81.1656px;
+  line-height: 115%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.not-found_text p {
+  margin-bottom: 55px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 145%;
+  color: #000000;
+}
+.to_main_page-button button {
+  width: 348px;
+  height: 72px;
+  border: none;
+  outline: none;
+  background: #000000;
+  cursor: pointer;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+  color: #ffffff;
+}
