@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ПРКЧМ</title>
     <link rel="stylesheet" href="./style/style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,11 +22,11 @@
         </div>
         <div class="nav_list_wrapper">
           <div class="navlist">
-            <div class="nav_list_item">
-              <a href=""><p>О нас</p></a>
+            <div class="nav_list_item scroll_to_digest">
+              <p>О нас</p>
             </div>
-            <div class="nav_list_item">
-              <a href="#"><p>Услуги</p></a>
+            <div class="nav_list_item scroll_to_services">
+              <p>Услуги</p>
             </div>
             <div class="nav_list_item">
               <a href="/cases.html"><p>Кейсы</p></a>
@@ -774,7 +775,7 @@
     </div>
 
     <div class="black_line"></div>
-    <section>
+    <section class="our_services_block">
       <div class="marque_section">
         <marquee scrollamount="20" behavior="scroll">
           <p>
@@ -856,8 +857,8 @@
             <div class="service_circle_items">
               <h3>Создание контента</h3>
               <p>Текст</p>
-              <p>Фото</p>
-              <p>Видео</p>
+              <a href="/photo.html"><p>Фото</p></a>
+              <a href="/video.html"><p>Видео</p></a>
             </div>
           </div>
         </div>
@@ -1034,7 +1035,9 @@
               </p>
             </div>
             <div class="left_carousel_btn">
-              <button>Подробнее об услуге</button>
+              <a href="/create-content.html">
+                <button>Подробнее об услуге</button>
+              </a>
             </div>
           </div>
           <div class="right_carousel_item">
@@ -1146,7 +1149,9 @@
               </p>
             </div>
             <div class="left_carousel_btn">
-              <button>Подробнее об услуге</button>
+              <a href="/create-content.html">
+                <button>Подробнее об услуге</button>
+              </a>
             </div>
           </div>
           <div class="right_carousel_item">
@@ -1259,7 +1264,9 @@
               </p>
             </div>
             <div class="left_carousel_btn">
-              <button>Подробнее об услуге</button>
+              <a href="/create-content.html">
+                <button>Подробнее об услуге</button>
+              </a>
             </div>
           </div>
           <div class="right_carousel_item">
@@ -1371,7 +1378,9 @@
               </p>
             </div>
             <div class="left_carousel_btn">
-              <button>Подробнее об услуге</button>
+              <a href="/create-content.html">
+                <button>Подробнее об услуге</button>
+              </a>
             </div>
           </div>
           <div class="right_carousel_item">
@@ -1483,7 +1492,9 @@
               </p>
             </div>
             <div class="left_carousel_btn">
-              <button>Подробнее об услуге</button>
+              <a href="/create-content.html">
+                <button>Подробнее об услуге</button>
+              </a>
             </div>
           </div>
           <div class="right_carousel_item">
@@ -2360,5 +2371,6 @@
     </footer>
 
     <script src="./js/index.js"></script>
+    <script src="./js/scroll-navigation.js"></script>
   </body>
 </html>

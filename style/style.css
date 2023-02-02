@@ -58,12 +58,14 @@ nav {
 .nav_list_item {
   margin-right: 47px;
 }
-.nav_list_item a {
+.nav_list_item a,
+.nav_list_item p {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 145%;
   color: #000000;
+  cursor: pointer;
 }
 .nav_contacts {
   display: flex;
@@ -1004,7 +1006,7 @@ nav {
   margin-top: 100px;
 }
 .digest {
-  margin-top: 50px;
+  padding-top: 50px;
 }
 .left_geography,
 .left_deigest,

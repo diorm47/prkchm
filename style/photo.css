@@ -1,0 +1,79 @@
+.photo_page .cc_left_img img {
+  width: 350px;
+}
+
+.photo_page .section_answer_1_items {
+  padding-bottom: 56px;
+}
+
+.photo_page .section_answer_3_items {
+  padding-bottom: 30px;
+}
+
+.photo_page .advantages_list_item {
+  padding-top: 10px;
+  align-items: flex-start;
+}
+
+.photo_page .advantages_list_item .advantage_text li {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 125%;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.photo_page .advantages_list_item .advantage_number {
+  margin-top: -10px;
+}
+
+.process_members_title p {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 60px 0 30px;
+}
+
+.process_members_circles {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.process_members_circles div {
+  width: 223px;
+  height: 223px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.process_members_circles div p {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 145%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.process_members_circle_1 {
+  margin-right: -20px;
+  margin-left: 0;
+}
+.process_members_circle_2 {
+  margin-right: -20px;
+  margin-left: -20px;
+}
+.process_members_circle_3 {
+  margin-right: -20px;
+  margin-left: -20px;
+}
+.process_members_circle_4 {
+  margin-left: -20px;
+  margin-right: 0;
+}
