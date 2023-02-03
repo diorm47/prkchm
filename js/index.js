@@ -390,6 +390,8 @@ const openModalBtn1 = document.querySelector(".btn-open1");
 const openModalBtn2 = document.querySelector(".btn-open2");
 const openModalBtn3 = document.querySelector(".btn-open3");
 const openModalBtn4 = document.querySelector(".btn-open4");
+const openModalBtn5 = document.querySelector(".btn-open5");
+const openModalBtn6 = document.querySelector(".btn-open6");
 const closeModalBtn = document.querySelector(".btn-close");
 const modal_wrapper = document.querySelector(".modal_wrapper");
 
@@ -422,3 +424,26 @@ openModalBtn1.addEventListener("click", openModal);
 openModalBtn2.addEventListener("click", openModal);
 openModalBtn3.addEventListener("click", openModal);
 openModalBtn4.addEventListener("click", openModal);
+openModalBtn5.addEventListener("click", openModal);
+openModalBtn6.addEventListener("click", openModal);
+
+// (function () {
+//   var square = document.querySelector(".service_circle");
+
+//   var observer = new IntersectionObserver((entries) => {
+//     entries.forEach((entry) => {
+//       if (
+//         typeof getCurrentAnimationPreference === "function" &&
+//         !getCurrentAnimationPreference()
+//       ) {
+//         return;
+//       }
+
+//       if (entry.isIntersecting) {
+//         entry.target.classList.add("circles_anim");
+//       }
+//     });
+//   });
+
+//   observer.observe(square);
+// })();

@@ -77,3 +77,40 @@ body input[type="submit"] {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+.from_left_anim {
+  transform: translateX(-150%);
+  animation: from_left 1s forwards;
+}
+
+.from_right_anim {
+  transform: translateX(-150%);
+  animation: from_right 1s forwards;
+}
+@keyframes from_left {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes from_right {
+  0% {
+    transform: translateX(150%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+#progress {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 1vh;
+  transform-origin: 0 50%;
+  transform: scaleX(0);
+  background: red;
+}
