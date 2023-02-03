@@ -1,0 +1,74 @@
+.modal_wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 998;
+}
+
+.modal {
+  width: 945px;
+  margin: 0 auto;
+  background: #ffffff;
+  z-index: 999 !important;
+  padding: 60px 70px;
+  position: absolute;
+}
+.modal .main_form_form {
+  margin: 0;
+}
+.modal .main_form_form .form__group {
+  margin-bottom: 10px;
+}
+
+.btn-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.btn-close p {
+  font-size: 30px;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+
+.form_modal_title h3 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.form_modal_title p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 145%;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.modal .main_form_file {
+  margin-bottom: -7px;
+}

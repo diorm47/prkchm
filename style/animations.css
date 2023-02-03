@@ -1,0 +1,79 @@
+body button,
+body input[type="button"],
+body input[type="submit"] {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.more_btn button:hover {
+  transition: all 0.3s ease;
+  opacity: 0.8;
+}
+.more_btn button:active {
+  transition: none;
+  opacity: 1;
+}
+.input_form_btn input:hover {
+  transition: all 0.3s ease;
+  opacity: 0.8;
+}
+.input_form_btn input:active {
+  transition: none;
+  opacity: 1;
+}
+.download_btn button:hover {
+  transition: all 0.3s ease;
+  opacity: 0.8;
+}
+.download_btn button:active {
+  transition: none;
+  opacity: 1;
+}
+.left_carousel_btn button:hover {
+  transition: all 0.3s ease;
+  background: #000000;
+  color: #fff;
+}
+.left_carousel_btn button:active {
+  transition: none;
+  background: #ffff;
+  color: #000;
+}
+
+.nav_list_item,
+.footer_links_list a {
+  display: inline-block;
+  position: relative;
+}
+
+.nav_list_item ::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.footer_links_list a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 7px;
+  left: 0;
+  background-color: #ffffff;
+  opacity: 0.6;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.nav_list_item :hover::after,
+.footer_links_list a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

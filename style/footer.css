@@ -1,0 +1,129 @@
+footer {
+  background: #000;
+  padding: 100px 0;
+}
+
+.footer_wrapper {
+  width: 1215px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footer_left_logo_copyright {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer_left_logo_copyright .footer_copyright {
+  margin-top: 320px;
+}
+.footer_right {
+  width: 800px;
+}
+
+.footer_copyright p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 145%;
+  color: #ffffff;
+  opacity: 0.4;
+}
+
+.footer_links_list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.footer_links_list div {
+  width: 195px;
+}
+.footer_links_list h3 {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 145%;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.footer_links_list p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 125%;
+  color: #ffffff;
+  opacity: 0.6;
+  margin-bottom: 10px;
+  transition: all 0.4s ease;
+}
+
+.footer_contacts {
+  width: 110px !important;
+}
+.footer_contacts h3 {
+  text-align: end;
+}
+
+.footer_contacts_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer_socials_icons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.footer_socials_icons a {
+  margin-right: 20px;
+}
+.footer_socials {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer_email a {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 145%;
+
+  color: #ffffff;
+}
+
+.footer_location p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 145%;
+  color: #ffffff;
+}
+
+.footer_phone_number a {
+  font-weight: 400;
+  font-size: 37px;
+  line-height: 145%;
+  text-align: right;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.footer_phone_number p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 145%;
+  text-align: right;
+  color: #ffffff;
+}
+
+.footer_policy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+.footer_policy p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 145%;
+  color: #ffffff;
+  opacity: 0.4;
+}
