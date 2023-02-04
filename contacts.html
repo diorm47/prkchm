@@ -21,12 +21,19 @@
           <a href="/index.html"><p>ПРКЧМ</p></a>
         </div>
         <div class="nav_list_wrapper">
+          <!-- <div class="mob_menu_overlay"></div> -->
+          <div class="close_menu" onclick="toggleMenu()">
+            <img src="./assests/icons/close_menu.svg" alt="close_menu" />
+          </div>
+          <div class="nav_logo">
+            <a href=""><p>ПРКЧМ</p></a>
+          </div>
           <div class="navlist">
             <div class="nav_list_item scroll_to_digest">
-              <a href=""><p>О нас</p></a>
+              <p>О нас</p>
             </div>
             <div class="nav_list_item scroll_to_services">
-              <a href="/index.html"><p>Услуги</p></a>
+              <p>Услуги</p>
             </div>
             <div class="nav_list_item">
               <a href="/cases.html"><p>Кейсы</p></a>
@@ -61,11 +68,14 @@
             </div>
           </div>
         </div>
+        <div class="nav_menu" onclick="toggleMenu()">
+          <img src="./assests/icons/menu.svg" alt="nav menu" />
+        </div>
       </div>
     </nav>
     <div class="contacts_page">
       <div class="template">
-        <div class="left_section">
+        <div class="left_section from_left_anim">
           <div class="contacts_page_left_list">
             <div class="left_contact_img">
               <img src="./assests/images/contacts-left.png" alt="" />
@@ -94,7 +104,7 @@
             </div>
           </div>
         </div>
-        <div class="right_section">
+        <div class="right_section from_right_anim">
           <div class="navigation_links">
             <p><a href="/index.html">Главная</a> / <a href="">Контакты</a></p>
           </div>
@@ -281,5 +291,6 @@
       </div>
     </footer>
     <script src="./js/scroll-navigation.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

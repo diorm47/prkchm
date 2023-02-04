@@ -22,15 +22,22 @@
           <a href=""><p>ПРКЧМ</p></a>
         </div>
         <div class="nav_list_wrapper">
+          <!-- <div class="mob_menu_overlay"></div> -->
+          <div class="close_menu" onclick="toggleMenu()">
+            <img src="./assests/icons/close_menu.svg" alt="close_menu" />
+          </div>
+          <div class="nav_logo">
+            <a href=""><p>ПРКЧМ</p></a>
+          </div>
           <div class="navlist">
-            <div class="nav_list_item">
-              <a href=""><p>О нас</p></a>
+            <div class="nav_list_item scroll_to_digest">
+              <p>О нас</p>
+            </div>
+            <div class="nav_list_item scroll_to_services">
+              <p>Услуги</p>
             </div>
             <div class="nav_list_item">
-              <a href="#"><p>Услуги</p></a>
-            </div>
-            <div class="nav_list_item">
-              <a href="#"><p>Кейсы</p></a>
+              <a href="/cases.html"><p>Кейсы</p></a>
             </div>
             <div class="nav_list_item">
               <a href="/contacts.html"><p>Контакты</p></a>
@@ -61,6 +68,9 @@
               </a>
             </div>
           </div>
+        </div>
+        <div class="nav_menu" onclick="toggleMenu()">
+          <img src="./assests/icons/menu.svg" alt="nav menu" />
         </div>
       </div>
     </nav>
@@ -161,5 +171,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/index.js"></script>
   </body>
 </html>

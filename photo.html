@@ -19,10 +19,17 @@
   <body>
     <nav>
       <div class="nav_wrapper">
-        <div class="nav_logo">
+        <div class="nav_logo ">
           <a href="/index.html"><p>ПРКЧМ</p></a>
         </div>
         <div class="nav_list_wrapper">
+          <!-- <div class="mob_menu_overlay"></div> -->
+          <div class="close_menu" onclick="toggleMenu()">
+            <img src="./assests/icons/close_menu.svg" alt="close_menu" />
+          </div>
+          <div class="nav_logo">
+            <a href=""><p>ПРКЧМ</p></a>
+          </div>
           <div class="navlist">
             <div class="nav_list_item scroll_to_digest">
               <p>О нас</p>
@@ -63,27 +70,30 @@
             </div>
           </div>
         </div>
+        <div class="nav_menu" onclick="toggleMenu()">
+          <img src="./assests/icons/menu.svg" alt="nav menu" />
+        </div>
       </div>
     </nav>
     <div class="create_content_page photo_page">
       <div class="template">
-        <div class="left_section">
+        <div class="left_section from_left_anim">
           <div class="cc_left_img">
             <img src="./assests/images/photo-img.png" alt="" />
           </div>
         </div>
-        <div class="right_section">
-          <div class="navigation_links">
+        <div class="right_section ">
+          <div class="navigation_links from_right_anim">
             <p>
               <a href="/index.html">Главная</a> /
               <a href="/create-content.html">Создание контента </a> /
               <a href="">Фото </a>
             </p>
           </div>
-          <div class="right_title">
+          <div class="right_title from_right_anim">
             <h1>Фото</h1>
           </div>
-          <div class="advatages_list">
+          <div class="advatages_list from_right_anim">
             <div class="growing_linee"></div>
 
             <div class="advantages_list_item">
@@ -706,5 +716,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/index.js"></script>
   </body>
 </html>

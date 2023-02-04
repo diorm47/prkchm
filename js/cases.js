@@ -19,3 +19,10 @@ filterContainer.addEventListener("click", (event) => {
     });
   }
 });
+
+
+
+function toggleMenu() {
+  var element = document.querySelector(".nav_list_wrapper");
+  element.classList.toggle("mob_menu_wrapper");
+}

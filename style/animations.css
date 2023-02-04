@@ -82,6 +82,10 @@ body input[type="submit"] {
   transform: translateX(-150%);
   animation: from_left 1s forwards;
 }
+.mob_menu_wrapper {
+  transform: translateX(-150%);
+  animation: from_right 0.3s forwards;
+}
 
 .from_right_anim {
   transform: translateX(-150%);
@@ -103,14 +107,25 @@ body input[type="submit"] {
     transform: translateY(0);
   }
 }
-#progress {
-  position: fixed;
-  z-index: 10;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 1vh;
-  transform-origin: 0 50%;
-  transform: scaleX(0);
-  background: red;
+
+.circle_text_anima {
+  animation: 10s linear 0s normal none infinite running rotate;
+  -webkit-animation: 10s linear 0s normal none infinite running rotate;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

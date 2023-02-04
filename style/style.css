@@ -33,8 +33,18 @@ body {
 .third_right_block {
   width: 800px;
 }
-.header_left_img img {
+.header_left_img {
+  position: relative;
+}
+.circle_text_anima {
+  position: absolute;
+  left: 16%;
+  top: -5px;
+  width: 200px;
+}
+.header_left_img .header_main_img img {
   margin-left: -60px;
+  position: relative;
 }
 .message_block {
   background: #000000;

@@ -75,3 +75,125 @@ nav {
   text-transform: uppercase;
   color: #000000;
 }
+.nav_menu {
+  position: relative;
+  z-index: 88;
+  display: none;
+}
+.nav_list_wrapper .close_menu,
+.nav_list_wrapper .nav_logo,
+.nav_list_wrapper .mob_menu_overlay {
+  display: none;
+}
+@media only screen and (max-width: 1250px) {
+  .nav_wrapper {
+    width: 100%;
+  }
+  nav {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .nav_list_wrapper {
+    display: none;
+  }
+  .nav_menu {
+    display: flex;
+    cursor: pointer;
+  }
+  .nav_wrapper {
+    padding: 18px 0;
+    margin-bottom: 50px;
+  }
+}
+.mob_menu_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 998;
+  background: rgba(0, 0, 0, 0.6);
+}
+.mob_menu_wrapper {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  height: 100vh;
+  background: #000000;
+  color: #ffffff;
+  z-index: 999;
+  padding-left: 30px;
+}
+.mob_menu_wrapper .close_menu,
+.mob_menu_wrapper .nav_logo,
+.mob_menu_wrapper .mob_menu_overlay {
+  display: flex;
+}
+.close_menu {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  cursor: pointer;
+  z-index: 2002;
+}
+.mob_menu_wrapper .navlist {
+  margin-bottom: 15px;
+  background: #000;
+}
+
+.mob_menu_wrapper .navlist,
+.mob_menu_wrapper .nav_contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.mob_menu_wrapper .navlist div,
+.mob_menu_wrapper .nav_contacts div {
+  margin: 0;
+  margin-bottom: 25px;
+}
+.mob_menu_wrapper .navlist p,
+.mob_menu_wrapper .navlist a {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.mob_menu_wrapper .nav_contacts p {
+  color: #ffffff;
+}
+.mob_menu_wrapper .nav_contacts_icons {
+  margin-bottom: 0;
+}
+.mob_menu_wrapper .nav_contacts_icons div {
+  background: #ffffff;
+  padding: 16px 18px;
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-bottom: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mob_menu_wrapper .nav_logo {
+  padding: 0;
+  margin-top: 60px;
+  margin-bottom: 35px;
+}
+
+.mob_menu_wrapper .nav_logo p {
+  color: #000;
+  background: #ffffff;
+}

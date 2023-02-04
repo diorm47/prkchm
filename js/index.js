@@ -427,23 +427,9 @@ openModalBtn4.addEventListener("click", openModal);
 openModalBtn5.addEventListener("click", openModal);
 openModalBtn6.addEventListener("click", openModal);
 
-// (function () {
-//   var square = document.querySelector(".service_circle");
 
-//   var observer = new IntersectionObserver((entries) => {
-//     entries.forEach((entry) => {
-//       if (
-//         typeof getCurrentAnimationPreference === "function" &&
-//         !getCurrentAnimationPreference()
-//       ) {
-//         return;
-//       }
 
-//       if (entry.isIntersecting) {
-//         entry.target.classList.add("circles_anim");
-//       }
-//     });
-//   });
-
-//   observer.observe(square);
-// })();
+function toggleMenu() {
+  var element = document.querySelector(".nav_list_wrapper");
+  element.classList.toggle("mob_menu_wrapper");
+}

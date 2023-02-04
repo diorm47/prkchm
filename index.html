@@ -21,6 +21,13 @@
           <a href=""><p>ПРКЧМ</p></a>
         </div>
         <div class="nav_list_wrapper">
+          <!-- <div class="mob_menu_overlay"></div> -->
+          <div class="close_menu" onclick="toggleMenu()">
+            <img src="./assests/icons/close_menu.svg" alt="close_menu" />
+          </div>
+          <div class="nav_logo">
+            <a href=""><p>ПРКЧМ</p></a>
+          </div>
           <div class="navlist">
             <div class="nav_list_item scroll_to_digest">
               <p>О нас</p>
@@ -61,12 +68,22 @@
             </div>
           </div>
         </div>
+        <div class="nav_menu" onclick="toggleMenu()">
+          <img src="./assests/icons/menu.svg" alt="nav menu" />
+        </div>
       </div>
     </nav>
     <header>
       <div class="header_wrapper">
         <div class="header_left_img from_left_anim">
-          <img src="./assests/images/header-left.png" alt="header left img" />
+          <img
+            class="circle_text_anima"
+            src="./assests/images/circle-text.svg"
+            alt="circle text"
+          />
+          <div class="header_main_img">
+            <img src="./assests/images/header-left.png" alt="header left img" />
+          </div>
         </div>
         <div class="right_block">
           <div class="message_block from_right_anim">
