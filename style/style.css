@@ -967,6 +967,7 @@ body {
 
 .letters_carousel_wrapper {
   width: 100%;
+  overflow: hidden;
 }
 .letters_carousel_items {
   position: relative;
@@ -1233,6 +1234,7 @@ body {
 }
 
 @media only screen and (max-width: 970px) {
+
   .right_top_text p {
     width: 100% !important;
     word-wrap: break-word;
@@ -1299,9 +1301,18 @@ body {
   .marque_section {
     height: 38px;
   }
+  .footer_right {
+    width: 50%;
+  }
+  .analyse_products {
+    width: 100%;
+ 
+    
+}
 }
 
 @media only screen and (max-width: 820px) {
+
   .header_circle_1,
   .header_circle_2,
   .header_circle_3,
@@ -1350,6 +1361,9 @@ body {
 }
 
 @media only screen and (max-width: 730px) {
+  .advantage_text {
+    width: 100%;
+}
   .header_wrapper .header_right_wrapper {
     display: flex;
     flex-direction: column-reverse;
@@ -1431,9 +1445,9 @@ body {
     border-bottom: 1px solid #000;
   }
   .warning_message .exclamation_mark {
-    width: 120px;
+    padding: 0px 6px;
     height: 32px;
-    nav-right: 12px;
+    margin-right: 12px;
   }
   .warning_message .exclamation_mark p {
     font-size: 24px;
@@ -1705,4 +1719,35 @@ body {
 }
 
 @media only screen and (max-width: 500px) {
+  .message_text br {
+    display: none !important;
+  }
+  .second_view .union_triang {
+    margin-bottom: -177px !important;
+  }
+  .third_right_block .section_questions p {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .message_block {
+    margin-bottom: 40px !important;
+  }
+  .sl_num_quest {
+    width: 140px;
+    text-align: left;
+  }
+  .slider_more .exclamation_mark {
+    margin-right: 12px;
+    width: 83px;
+  }
+  .right_title h3 {
+    font-size: 32px;
+  }
+}
+
+
+@media only screen and (max-width: 400px) {
+  .recom_base {
+    width: 127px;
+  }
 }
