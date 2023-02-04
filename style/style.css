@@ -1062,6 +1062,9 @@ body {
 .slider_more_wripper {
   display: flex;
 }
+.right_dropdown_menu .footer_left_logo_copyright {
+  display: none;
+}
 
 @media only screen and (max-width: 1250px) {
   .header_wrapper,
@@ -1677,6 +1680,27 @@ body {
   }
   .form_socials p br {
     display: none !important;
+  }
+  .footer_wrapper {
+    flex-direction: column-reverse;
+  }
+  .right_dropdown_menu {
+    width: 100%;
+  }
+  .footer_left_logo_copyright {
+    display: none !important;
+  }
+
+  .right_dropdown_menu .footer_left_logo_copyright {
+    display: flex !important;
+    margin-bottom: 40px;
+  }
+  footer {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+  .main_form_file {
+    padding-bottom: 16.5px;
   }
 }
 
