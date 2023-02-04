@@ -164,3 +164,22 @@
   color: #000000;
   opacity: 0.3;
 }
+.form_socials_wrapper {
+  display: flex;
+}
+
+@media only screen and (max-width: 770px) {
+  .form_socials p br {
+    display: none;
+  }
+
+  .form_socials {
+    flex-direction: column;
+  }
+  .form_socials p {
+    margin-top: 20px;
+  }
+  .form_socials p br {
+    display: block;
+  }
+}

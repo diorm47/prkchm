@@ -113,3 +113,80 @@
   transition: all 0.5s ease;
   color: #ffffff;
 }
+
+@media only screen and (max-width: 1270px) {
+  .service_circle {
+    width: 300px;
+    height: 300px;
+  }
+  .service_circle_items h3 {
+    font-size: 18px;
+    line-height: 125%;
+    margin-bottom: 8px;
+    letter-spacing: 0.04em;
+  }
+  .service_circle_items p {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .service_circle_items {
+    width: 200px;
+    margin-left: 50px;
+  }
+
+  .our_services_twice .service_circle_1 {
+    position: relative;
+    right: -15px;
+  }
+  .our_services_twice .service_circle_2 {
+    position: relative;
+    left: -15px;
+  }
+  .to_tablet_mode {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .our_services_three {
+    top: -68px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    right: -10px;
+  }
+  .our_services_three .service_circle_3 {
+    position: relative;
+    right: 0px;
+  }
+  .our_services_three .service_circle_4 {
+    position: relative;
+    left: -35px !important;
+  }
+  .our_services_three .service_circle_5 {
+    position: relative;
+    margin: 0 auto;
+    margin-right: -133px;
+    left: 0;
+    top: -70px;
+  }
+
+  .our_services_twice_second {
+    top: -35px;
+  }
+  .our_services_twice_second .service_circle_6 {
+    position: relative;
+    right: -5px;
+  }
+  .our_services_twice_second .service_circle_7 {
+    position: relative;
+    left: -30px;
+  }
+  .service_circle_7 .service_circle_items {
+    margin-top: 40px;
+  }
+  .service_circle_2 .service_circle_items {
+    margin-top: -20px !important;
+  }
+  .geom_item {
+    margin-top: -100px !important;
+  }
+}
