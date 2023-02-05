@@ -1234,7 +1234,6 @@ body {
 }
 
 @media only screen and (max-width: 970px) {
-
   .right_top_text p {
     width: 100% !important;
     word-wrap: break-word;
@@ -1306,13 +1305,10 @@ body {
   }
   .analyse_products {
     width: 100%;
- 
-    
-}
+  }
 }
 
 @media only screen and (max-width: 820px) {
-
   .header_circle_1,
   .header_circle_2,
   .header_circle_3,
@@ -1363,7 +1359,7 @@ body {
 @media only screen and (max-width: 730px) {
   .advantage_text {
     width: 100%;
-}
+  }
   .header_wrapper .header_right_wrapper {
     display: flex;
     flex-direction: column-reverse;
@@ -1743,8 +1739,11 @@ body {
   .right_title h3 {
     font-size: 32px;
   }
+  .form_socials p {
+    font-size: 14px;
+    margin-top: 0;
+  }
 }
-
 
 @media only screen and (max-width: 400px) {
   .recom_base {

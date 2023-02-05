@@ -52,3 +52,41 @@
 .contacts_form .main_form_form .input_form_btn p {
   width: 100%;
 }
+
+.right_section .contact_page_items,
+.right_section .contacts_socials {
+  display: none;
+}
+@media only screen and (max-width: 1050px) {
+  .right_section .contact_page_items,
+  .right_section .contacts_socials {
+    display: block;
+    margin-bottom: 40px;
+  }
+  .right_section .contacts_socials {
+    margin-bottom: 64px;
+  }
+  .contacts_page .main_form_form {
+    margin-top: 0;
+  }
+  .contacts_page .contacts_form .right_title {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .nav_wrapper {
+    margin-bottom: 15px;
+  }
+  .navigation_links p {
+    margin-bottom: 15px;
+  }
+  .contacts_page .from_right_anim .right_title p {
+    margin-bottom: 0;
+  }
+  .contacts_page .contacts_socials .form_socials {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: start;
+  }
+}

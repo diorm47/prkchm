@@ -78,6 +78,8 @@
   z-index: -1;
   position: absolute;
   opacity: 0;
+  visibility: hidden;
+  width: 200px;
 }
 
 .main_form .form_left_img img {
@@ -186,5 +188,10 @@
   .main_form_file {
     margin-left: -20px;
   }
-  
+}
+
+@media only screen and (max-width: 600px) {
+  .main_form_file input[type="file"] {
+    width: 40px;
+  }
 }
