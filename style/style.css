@@ -1516,6 +1516,9 @@ body {
   }
 }
 @media only screen and (max-width: 600px) {
+  .our_services .service_circle {
+    margin-top: -25px;
+  }
   .our_services_twice,
   .our_services_twice_second,
   .our_services_three {

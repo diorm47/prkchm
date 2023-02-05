@@ -318,4 +318,7 @@
     bottom: -15px;
     margin-bottom: 0;
   }
+  .to_right_word {
+    margin-left: 20px !important;
+}
 }
