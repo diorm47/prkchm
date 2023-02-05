@@ -1366,6 +1366,9 @@ body {
 }
 
 @media only screen and (max-width: 730px) {
+  .h_wrapper_txt .message_block .message_text p br {
+    display: flex !important;
+  }
   .advantage_text {
     width: 100%;
   }
@@ -1507,6 +1510,9 @@ body {
   }
   .more_btn button {
     width: 100%;
+  }
+  .nav_logo p {
+    padding: 2px;
   }
 }
 
@@ -1729,6 +1735,7 @@ body {
   .message_text br {
     display: none !important;
   }
+
   .second_view .union_triang {
     margin-bottom: -133px !important;
   }
