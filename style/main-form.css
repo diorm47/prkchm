@@ -103,7 +103,8 @@
 }
 
 .main_form_file label img {
-  margin-left: 14px;
+  margin-right: 14px;
+  padding-left: 14px;
 }
 #file-upload-filename {
   font-size: 12px;
@@ -182,4 +183,8 @@
   .form_socials p br {
     display: block;
   }
+  .main_form_file {
+    margin-left: -20px;
+  }
+  
 }

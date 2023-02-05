@@ -132,7 +132,6 @@ footer {
 /* Dropdown */
 
 .right_dropdown_menu {
-  
   display: none;
 }
 .right_dropdown_menu > ul {
@@ -267,11 +266,16 @@ footer {
   transition: max-height 0.6s ease-out;
 }
 
+@media only screen and (max-width: 1400px) {
+  .footer_right {
+    width: 65%;
+  }
+}
 
 @media only screen and (max-width: 1270px) {
   footer {
     padding-left: 20px;
-    orphans: 20px;
+    padding-right: 20px;
   }
   .footer_wrapper {
     width: 100%;
@@ -348,4 +352,3 @@ footer {
     border-bottom: 1px solid #fff;
   }
 }
-
