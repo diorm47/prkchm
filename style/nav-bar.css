@@ -85,6 +85,11 @@ nav {
 .nav_list_wrapper .mob_menu_overlay {
   display: none;
 }
+.nav_contacts_icons .nav_contacts_icon a:hover,
+.nav_phone a:hover {
+  transition: all 0.4s ease;
+  opacity: 0.7;
+}
 @media only screen and (max-width: 1250px) {
   .nav_wrapper {
     width: 100%;

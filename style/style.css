@@ -1067,6 +1067,15 @@ body {
   display: none;
 }
 
+.form_socials_wrapper .form_social img:hover {
+  transition: all 0.4s ease;
+  opacity: 0.7;
+}
+.footer_socials_icons a img:hover {
+  transition: all 0.4s ease;
+  opacity: 0.7;
+}
+
 @media only screen and (max-width: 1250px) {
   .header_wrapper,
   .third_view,
@@ -1622,7 +1631,6 @@ body {
   }
   .advantage_text {
     width: 100%;
-    margin-left: 42px;
   }
 
   .growing_linee {
@@ -1748,5 +1756,11 @@ body {
 @media only screen and (max-width: 400px) {
   .recom_base {
     width: 127px;
+  }
+  .header_left_img {
+    width: 100%;
+  }
+  .header_left_img .header_main_img img {
+    width: 100%;
   }
 }
