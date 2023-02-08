@@ -72,3 +72,10 @@
 .modal .main_form_file {
   margin-bottom: -7px;
 }
+
+/* @media only screen and (max-width: 1000px) {
+  .modal {
+    width: 100%;
+    padding: 40px;
+  }
+} */

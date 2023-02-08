@@ -1773,4 +1773,15 @@ body {
   .header_left_img .header_main_img img {
     width: 100%;
   }
+  .second_view .message_block .union_triang {
+    position: absolute;
+    bottom: 115px;
+  }
+
+  .second_view .message_block .message_text {
+    padding-right: 15px;
+  }
+  .second_view .message_block .message_text p {
+    font-size: 15px;
+  }
 }

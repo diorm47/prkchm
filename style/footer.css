@@ -352,3 +352,9 @@ footer {
     border-bottom: 1px solid #fff;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .footer_right {
+    width: 100% !important;
+  }
+}
