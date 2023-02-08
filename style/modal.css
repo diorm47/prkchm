@@ -73,9 +73,34 @@
   margin-bottom: -7px;
 }
 
-/* @media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1020px) {
   .modal {
-    width: 100%;
-    padding: 40px;
+    width: 90%;
+    margin: 0 auto;
   }
-} */
+}
+
+@media only screen and (max-width: 880px) {
+  .modal {
+    padding: 20px;
+  }
+  .form_modal_title h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .form_modal_title p {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .modal {
+    padding-top: 35px;
+    padding-bottom: 10px;
+  }
+  .btn-close {
+    top: 10px;
+    right: 10px;
+  }
+}
