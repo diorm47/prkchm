@@ -563,31 +563,7 @@ body {
   transform: translate(100%, 0);
 }
 
-.marque_section .ticker-wrapper__first-half,
-.bottom_marque .ticker-wrapper__first-half {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  right: 0;
-  animation: ticker 18s infinite linear forwards;
-}
-.marque_section .ticker-wrapper__second-half {
-  animation: 18s ticker 15s infinite linear forwards;
-}
-@keyframes ticker {
-  0% {
-    transform: translate(100%, 0);
-  }
-  50% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(-100%, 0);
-  }
-}
+
 .bottom_marque {
   display: flex;
   align-items: center;

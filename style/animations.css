@@ -72,6 +72,13 @@ body input[type="submit"] {
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
+.footer_links_list h3 {
+  cursor: pointer;
+}
+.footer_links_list h3:hover {
+  text-decoration: underline;
+}
+
 .nav_list_item :hover::after,
 .footer_links_list a:hover::after {
   transform: scaleX(1);
@@ -127,5 +134,29 @@ body input[type="submit"] {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+.marque_section .ticker-wrapper__first-half,
+.bottom_marque .ticker-wrapper__first-half {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  animation: 25s linear 0s normal none infinite running ticker;
+  -webkit-animation: 25s linear 0s normal none infinite running ticker;
+}
+@keyframes ticker {
+  0% {
+    transform: translate(100%, 0);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
   }
 }

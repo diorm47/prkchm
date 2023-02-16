@@ -1,5 +1,12 @@
 nav {
   width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  background: #ffffff;
+}
+body {
+  padding-top: 152px;
 }
 .navigation_links p,
 .navigation_links a {
@@ -17,7 +24,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   border-bottom: 2px solid #000000;
-  margin-bottom: 64px;
+  /* margin-bottom: 64px; */
 }
 
 .nav_list_wrapper {
@@ -101,6 +108,9 @@ nav {
 }
 
 @media only screen and (max-width: 992px) {
+  body {
+    padding-top: 122px;
+  }
   .nav_list_wrapper {
     display: none;
   }
@@ -110,7 +120,7 @@ nav {
   }
   .nav_wrapper {
     padding: 18px 0;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
   }
 }
 .mob_menu_overlay {
