@@ -1762,3 +1762,11 @@ body {
     font-size: 15px;
   }
 }
+
+
+.download_btn button {
+  border: 0;
+}
+.more_btn button {
+  border: 0;
+}
