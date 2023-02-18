@@ -18,3 +18,15 @@ function scrollToDigest() {
 
 scroll_to_digest.addEventListener("click", scrollToDigest);
 
+// Scroll
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.querySelector(".nav_wrapper").style.padding = "10px 0";
+  } else {
+    document.querySelector(".nav_wrapper").style.padding = "25px 0";
+  }
+}
