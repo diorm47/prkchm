@@ -2,4 +2,4 @@
 Adaptive landing page freelance order
 
 # demo
-https://prkchm.vercel.app
+https://project-gamma-five.vercel.app/
